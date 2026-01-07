@@ -10,7 +10,7 @@ function App() {
     <>
       <Router>
         <Sidebar />
-        <main className="absolute left-16.25 text-color w-[calc(100%-66px)] p-4 min-h-[calc(100vh-97px)] bg-primary-color top-24.25">
+        <main className="absolute left-16.25 text-color w-[calc(100%-65px)] p-4 min-h-[calc(100vh-97px)] bg-primary-color top-24.25">
           <div className="container mx-auto">
             <Navbar />
             <Routes>
