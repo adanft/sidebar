@@ -1,5 +1,6 @@
 name: Components deployment
-
+permissions:
+  contents: write
 on:
   push:
     branches:
@@ -11,8 +12,8 @@ jobs:
   deployment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
         with:
           node-version: lts/*
       - name: Install dependencies
@@ -20,9 +21,6 @@ jobs:
       - name: Build a project
         run: npm run build
       - name: Deploy a GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
-
-
-
