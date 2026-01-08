@@ -44,6 +44,22 @@ body {
   background-color: var(--bg-primary-color);
 }
 
+.bg-dark {
+  background-color: #19171d;
+}
+
+.text-dark {
+  color: #8b8ea0;
+}
+
+.bg-light {
+  background-color: #ffffff;
+}
+
+.text-light {
+  color: #727587;
+}
+
 .bg-main-color {
   background-color: var(--primary-color);
 }

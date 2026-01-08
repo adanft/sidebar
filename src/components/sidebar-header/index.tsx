@@ -10,7 +10,9 @@ function SidebarHeader({ action, state }: Props) {
     <header className="relative flex items-center h-24 p-2">
       <Link to="/" className="flex items-center gap-2 overflow-hidden">
         <img src="/logo.png" alt="logo" width={48} height={48} />
-        <span className="font-semibold text-2xl whitespace-nowrap text-primary-color">Sidebar</span>
+        <span className="font-semibold text-2xl whitespace-nowrap text-primary-color">
+          Components
+        </span>
       </Link>
       <button
         className={`text-primary-color leading-none transition-all duration-300 absolute top-2/4 -translate-y-1/2 cursor-pointer ${
